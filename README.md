@@ -1,18 +1,18 @@
 # baidu-postbar
 项目开发说明书
 一、概要
--
+--
 * 项目名称：百度贴吧
 * 项目开发人员：胡云南
 * 项目完成时间：2014年1月26 日
 * 技术：CSS+DIV,HTML,JavaScript,Ajax,json,MySQL,PHP
 
 二、项目功能介绍
--
+--
 该贴吧项目包含如下操作：
   用户注册、登录、注销、发帖、回帖、评论功能以及帖子分页；
 三、数据库设计
--
+--
 1. 创建数据库，并根据业务需要建表，经分析需要如下几张表：
      用户表：user
      发帖表：post
@@ -36,8 +36,10 @@
 （1）根据业务逻辑，post表中u_id与user表中的u_id关联；
 （2）thread表中的p_id与post表中的p_id关联；
 （3）comment表中t_id与thread表中的t_id关联，comment表中的u_id与user表中的u_id关联；
+
 四、项目功能展示与说明
--
+--
+
 1. 注册功能：此功能运用MySQL、PHP、Javascript、Ajax等技术实现	了以下效果：
     （1）在点击注册时运用JavaScript及Ajax、正则等技术对不符合规范的用户名、密码、手机和邮箱进行过滤，如图2-1所示：
                    
